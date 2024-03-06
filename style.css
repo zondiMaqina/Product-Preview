@@ -1,8 +1,25 @@
 *{
-    font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+img{
+    min-width: 300px;
+    max-width: 400px;
+
+    min-height: 250px;
+    max-height: 480px;
+}
+
+/*Positioning*/
+
+.main{
+    display: flex;
+}
+
+section{
+    width: fit-content;
+    border: 2px solid;
+}
