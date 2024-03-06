@@ -6,12 +6,21 @@
     text-decoration: none;
 }
 
-img{
-    min-width: 300px;
-    max-width: 400px;
+body{
+    background-color: hsl(30, 38%, 92%);
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.left-content{
+    width: 100%;
+}
+
+.left-content img{
+    width: 100%;
     display: block;
-    min-height: 250px;
-    max-height: 400px;
+    height: 400px;
+    border-radius: 10px 0 0 10px;
 }
 
 
@@ -21,10 +30,14 @@ img{
 .main{
     display: flex;
     width: fit-content;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-section{
+.right-content{
     width: fit-content;
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -80,7 +93,47 @@ section a{
     text-align: center;
 }
 
-.options, .info, .top, .main, .section{
-    border: 2px solid;
+
+.attribution{
+    width: fit-content;
+    margin: 50px auto;
+    background-color: rgba(240, 248, 255, 0.846);
+    padding: 10px;
+    border-radius: 10px;
 }
 
+.attribution a{
+    color: rgb(61, 47, 47);
+}
+
+
+@media screen and (max-width: 500px){
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .left-content img{
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: 280px;
+    }
+
+    .top{
+        width: fit-content;
+    }
+
+    .info{
+        width: fit-content;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
