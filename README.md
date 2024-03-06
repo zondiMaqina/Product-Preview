@@ -40,6 +40,10 @@ Users should be able to:
 }
 ```
 
+### Challenges
 
+I had a challenge when it came to controling the image's responsiveness i could not make it take full width of flexbox container until i realised it was actually a BACKGROUND-IMAGE
 
 ### Continued development
+
+I look forward to strengthening my responsiveness skills when it comes to css
